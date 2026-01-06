@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Math Facts - Timed Assessments</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Math Facts</h1>
+    <div id="controls">
+      <div>
+        <label>Student: </label>
+        <select id="studentSelect"></select>
+        <input id="newStudentName" placeholder="New student name" />
+        <button id="addStudent">Add</button>
+      </div>
+      <div>
+        <label>Time per question:</label>
+        <select id="timeLimit">
+          <option value="3">3s</option>
+          <option value="6" selected>6s</option>
+          <option value="10">10s</option>
+        </select>
+        <label>Questions:</label>
+        <input id="qCount" type="number" value="20" min="1" max="200" />
+        <button id="start">Start Assessment</button>
+      </div>
+    </div>
+
+    <div id="assessment" class="hidden">
+      <div id="status">Question <span id="curIndex">0</span> / <span id="totalQ">0</span></div>
+      <div id="questionBox">
+        <div id="questionText"></div>
+        <div id="timer">Time: <span id="timeRemaining">0</span>s</div>
+        <input id="answerInput" autocomplete="off" />
+        <button id="submitAnswer">Submit</button>
+      </div>
+      <div id="feedback"></div>
+    </div>
+
+    <h2>Progress</h2>
+    <div id="progressArea"></div>
+
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

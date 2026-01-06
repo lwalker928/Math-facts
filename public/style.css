@@ -1,0 +1,10 @@
+body { font-family: Arial, sans-serif; background:#f7f7fc; color:#222; }
+.container { max-width:900px; margin:24px auto; background:white; padding:18px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+#controls > div { margin-bottom:12px; }
+#questionBox { margin-top:12px; }
+#questionText { font-size:28px; font-weight:700; margin-bottom:8px; }
+#timer { margin-bottom:8px; }
+.hidden { display:none; }
+#feedback { margin-top:12px; min-height:28px; }
+#progressArea table { width:100%; border-collapse:collapse; }
+#progressArea th, #progressArea td { border:1px solid #ddd; padding:8px; }
